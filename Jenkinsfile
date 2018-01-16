@@ -6,10 +6,7 @@ node('master') {
     }
 
     stage("testing google.com with selenium chrome") {
-      sh '''#!/bin/bash -e
-        pytest test_google_assert.py
-        
-      '''
+       sh 'pytest test_google_assert.py'
     }
 
   }
