@@ -6,7 +6,7 @@ node('master') {
     }
 
     stage("testing google.com with selenium chrome") {
-       sh '/home/prjtadmin/.local/bin/pip install --user pytest'
+       sh 'pip install --user pytest'
        sh 'pytest test_google_assert.py'
     }
 
