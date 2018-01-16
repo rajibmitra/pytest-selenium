@@ -6,6 +6,7 @@ node('master') {
     }
 
     stage("testing google.com with selenium chrome") {
+       sh 'pip install -U pytest'
        sh 'pytest test_google_assert.py'
     }
 
